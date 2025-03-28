@@ -953,3 +953,7 @@ function UILibrary:LoadWindow(MainUI)
 
     return WindowLibrary.CategoryLibrary
 end
+
+print("UI Loaded...");
+
+return UILibrary
