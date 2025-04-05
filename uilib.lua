@@ -574,7 +574,8 @@ function UILibrary:LoadWindow(MainUI)
 
         function WidgetLibrary.NewWidget(Title, Description, Enabled, Callback)
             local Widget = Clone(GuiObjects.Elements.Categories.Elements.Widget)
-			--Utils.Categories.Widget.setStatus(Widget, Enabled)
+			Utils.Categories.Widget.setStatus(Widget, false)
+			Utils.Categories.Widget.Hover(Widget, false)
 			Utils.Categories.Widget.Click(Widget, Enabled)
 
             Widget.Title.Text = Title
